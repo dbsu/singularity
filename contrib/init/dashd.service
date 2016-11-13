@@ -1,15 +1,15 @@
 [Unit]
-Description=Dash's distributed currency daemon
+Description=Singularity's distributed currency daemon
 After=network.target
 
 [Service]
-User=dash
-Group=dash
+User=singularity
+Group=singularity
 
 Type=forking
-PIDFile=/var/lib/dashd/dashd.pid
-ExecStart=/usr/bin/dashd -daemon -pid=/var/lib/dashd/dashd.pid \
--conf=/etc/dash/dash.conf -datadir=/var/lib/dashd -disablewallet
+PIDFile=/var/lib/singularityd/singularityd.pid
+ExecStart=/usr/bin/singularityd -daemon -pid=/var/lib/singularityd/singularityd.pid \
+-conf=/etc/singularity/singularity.conf -datadir=/var/lib/singularityd -disablewallet
 
 Restart=always
 PrivateTmp=true

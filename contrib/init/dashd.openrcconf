@@ -1,25 +1,25 @@
-# /etc/conf.d/dashd: config file for /etc/init.d/dashd
+# /etc/conf.d/singularityd: config file for /etc/init.d/singularityd
 
 # Config file location
-#BITCOIND_CONFIGFILE="/etc/dash/dash.conf"
+#BITCOIND_CONFIGFILE="/etc/singularity/singularity.conf"
 
 # What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
-#BITCOIND_PIDDIR="/var/run/dashd"
+#BITCOIND_PIDDIR="/var/run/singularityd"
 
 # What filename to give the pidfile
-#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/dashd.pid"
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/singularityd.pid"
 
-# Where to write dashd data (be mindful that the blockchain is large)
-#BITCOIND_DATADIR="/var/lib/dashd"
+# Where to write singularityd data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/singularityd"
 
-# User and group to own dashd process
-#BITCOIND_USER="dash"
-#BITCOIND_GROUP="dash"
+# User and group to own singularityd process
+#BITCOIND_USER="singularity"
+#BITCOIND_GROUP="singularity"
 
-# Path to dashd executable
-#BITCOIND_BIN="/usr/bin/dashd"
+# Path to singularityd executable
+#BITCOIND_BIN="/usr/bin/singularityd"
 
-# Nice value to run dashd under
+# Nice value to run singularityd under
 #BITCOIND_NICE=0
 
 # Additional options (avoid -conf and -datadir, use flags above)

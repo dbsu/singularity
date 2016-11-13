@@ -93,7 +93,7 @@ public:
 };
 
 /**
- * Dash RPC command dispatcher.
+ * Singularity RPC command dispatcher.
  */
 class CRPCTable
 {

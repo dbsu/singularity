@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2015 The Dash developers
+// Copyright (c) 2014-2015 The Singularity developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -35,10 +35,10 @@ map<uint256, CDarksendBroadcastTx> mapDarksendBroadcastTxes;
 // Keep track of the active Masternode
 CActiveMasternode activeMasternode;
 
-/* *** BEGIN DARKSEND MAGIC - DASH **********
-    Copyright (c) 2014-2015, Dash Developers
-        eduffield - evan@dashpay.io
-        udjinm6   - udjinm6@dashpay.io
+/* *** BEGIN DARKSEND MAGIC - SINGULARITY **********
+    Copyright (c) 2014-2015, Singularity Developers
+        eduffield - evan@singularitypay.io
+        udjinm6   - udjinm6@singularitypay.io
 */
 
 void CDarksendPool::ProcessMessageDarksend(CNode* pfrom, std::string& strCommand, CDataStream& vRecv)
@@ -766,9 +766,9 @@ void CDarksendPool::ChargeRandomFees(){
 
                 Being that Darksend has "no fees" we need to have some kind of cost associated
                 with using it to stop abuse. Otherwise it could serve as an attack vector and
-                allow endless transaction that would bloat Dash and make it unusable. To
+                allow endless transaction that would bloat Singularity and make it unusable. To
                 stop these kinds of attacks 1 in 10 successful transactions are charged. This
-                adds up to a cost of 0.001DRK per transaction on average.
+                adds up to a cost of 0.001SNG per transaction on average.
             */
             if(r <= 10)
             {
@@ -1898,10 +1898,10 @@ bool CDarksendPool::IsCompatibleWithSession(int64_t nDenom, CTransaction txColla
 void CDarksendPool::GetDenominationsToString(int nDenom, std::string& strDenom){
     // Function returns as follows:
     //
-    // bit 0 - 100DRK+1 ( bit on if present )
-    // bit 1 - 10DRK+1
-    // bit 2 - 1DRK+1
-    // bit 3 - .1DRK+1
+    // bit 0 - 100SNG+1 ( bit on if present )
+    // bit 1 - 10SNG+1
+    // bit 2 - 1SNG+1
+    // bit 3 - .1SNG+1
     // bit 3 - non-denom
 
 
@@ -1969,10 +1969,10 @@ int CDarksendPool::GetDenominations(const std::vector<CTxOut>& vout, bool fSingl
 
     // Function returns as follows:
     //
-    // bit 0 - 100DRK+1 ( bit on if present )
-    // bit 1 - 10DRK+1
-    // bit 2 - 1DRK+1
-    // bit 3 - .1DRK+1
+    // bit 0 - 100SNG+1 ( bit on if present )
+    // bit 1 - 10SNG+1
+    // bit 2 - 1SNG+1
+    // bit 3 - .1SNG+1
 
     return denom;
 }
@@ -2230,7 +2230,7 @@ void ThreadCheckDarkSendPool()
     if(fLiteMode) return; //disable all Darksend/Masternode related functionality
 
     // Make this thread recognisable as the wallet flushing thread
-    RenameThread("dash-darksend");
+    RenameThread("singularity-darksend");
 
     unsigned int c = 0;
 
