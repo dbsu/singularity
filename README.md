@@ -1,7 +1,7 @@
 Singularity Core staging tree 0.12
 ===============================
 
-`master:` [![Build Status](https://travis-ci.org/singularitypay/singularity.svg?branch=master)](https://travis-ci.org/singularitypay/singularity) `v0.12.0.x:` [![Build Status](https://travis-ci.org/singularitypay/singularity.svg?branch=v0.12.0.x)](https://travis-ci.org/singularitypay/singularity/branches) `v0.12.1.x:` [![Build Status](https://travis-ci.org/singularitypay/singularity.svg?branch=v0.12.1.x)](https://travis-ci.org/singularitypay/singularity/branches)
+`master:` [![Build Status](https://travis-ci.org/singularitypay/singularity.svg?branch=master)](https://travis-ci.org/grumpydevelop/singularity)
 
 https://www.singularity.org
 
