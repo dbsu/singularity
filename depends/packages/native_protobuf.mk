@@ -1,7 +1,7 @@
 package=native_protobuf
 $(package)_version=2.5.0
-$(package)_download_path=https://protobuf.googlecode.com/files
-$(package)_file_name=protobuf-$($(package)_version).tar.bz2
+$(package)_download_path=https://launchpad.net/ubuntu/+archive/primary/+files
+$(package)_file_name=protobuf_$($(package)_version).orig.tar.gz
 $(package)_sha256_hash=c55aa3dc538e6fd5eaf732f4eb6b98bdcb7cedb5b91d3b5bdcf29c98c293f58e
 
 define $(package)_set_vars
