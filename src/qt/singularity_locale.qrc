@@ -1,0 +1,20 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/translations">
+        <file alias="bg">locale/singularity_bg.qm</file>
+        <file alias="de">locale/singularity_de.qm</file>
+        <file alias="en">locale/singularity_en.qm</file>
+        <file alias="es">locale/singularity_es.qm</file>
+        <file alias="fi">locale/singularity_fi.qm</file>
+        <file alias="fr">locale/singularity_fr.qm</file>
+        <file alias="it">locale/singularity_it.qm</file>
+        <file alias="ja">locale/singularity_ja.qm</file>
+        <file alias="pl">locale/singularity_pl.qm</file>
+        <file alias="pt">locale/singularity_pt.qm</file>
+        <file alias="ru">locale/singularity_ru.qm</file>
+        <file alias="sk">locale/singularity_sk.qm</file>
+        <file alias="sv">locale/singularity_sv.qm</file>
+        <file alias="vi">locale/singularity_vi.qm</file>
+        <file alias="zh_CN">locale/singularity_zh_CN.qm</file>
+        <file alias="zh_TW">locale/singularity_zh_TW.qm</file>
+    </qresource>
+</RCC>
