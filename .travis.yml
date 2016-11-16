@@ -100,6 +100,7 @@ script:
     - ./configure
     - make distdir PACKAGE=singularity VERSION=$HOST
     - cd singularity-$HOST
+    - automake --add-missing
     - ./configure
     - make $MAKEJOBS $GOAL || ( echo "Build failure. Verbose build follows." && make $GOAL V=1 ; false )
     - export LD_LIBRARY_PATH=$TRAVIS_BUILD_DIR/depends/$HOST/lib
