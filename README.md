@@ -1,7 +1,7 @@
 Singularity Core staging tree 0.12
 ===============================
 
-`master:` [![Build Status](https://travis-ci.org/singularitypay/singularity.svg?branch=master)](https://travis-ci.org/grumpydevelop/singularity)
+`master:` [![Build Status](https://travis-ci.org/grumpydevelop/singularity.svg?branch=master)](https://travis-ci.org/grumpydevelop/singularity)
 
 https://www.singularity.org
 
